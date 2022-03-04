@@ -1,0 +1,58 @@
+
+body{
+    font-family: 'Lato', sans-serif; /*Se usa para que se pueda reflejar el link de la tipografia de google font*/
+}
+h2{
+    font-weight: 600; /*Es para cambiar el grosor de la letra*/
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;   
+}
+.columna{
+    background:rgb(233, 231, 231);
+    color: rgb(58, 55, 55);
+    border: 1px solid rgb(58, 55, 55);
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 10px; /*Se usa para redondear los bordes*/
+    box-shadow: 10px 10px 10px rgba(173, 173, 165, 0.774); /*Se usa para crear una sombra. El 1er valor corresponde al eje de la X, el 2do al eje de las Y, y el tercero al degradado.*/
+    width: 30%;
+    box-sizing: border-box;
+}
+.precio{
+    font-size: 50px;
+    color: rgb(15, 142, 146);
+}
+.btn-precio{
+    background: rgb(175, 60, 150);
+    display: block;
+    padding: 10px;
+    color: cornsilk;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.btn-precio:hover{
+    background: rgb(233, 179, 215);
+    color: rgb(175, 60, 150);
+}
+@media(max-width:1070px){
+    .columna{
+        width: 45%;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:900px){
+    .columna{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
